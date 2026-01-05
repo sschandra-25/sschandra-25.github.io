@@ -25,6 +25,19 @@
             margin-top: 10px;
         }
         .btn:hover { background: #0056b3; }
+        /* This replaces the need for project images */
+        .project-placeholder {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3); /* Nice purple/blue gradient */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
     </style>
 </head>
 <body>
@@ -42,15 +55,28 @@
     </section>
 
     <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project One</h3>
-            <p>A brief description of what you did and the tools you used.</p>
+        <section>
+        <h2>My Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-placeholder">JS</div> <div class="project-info">
+                    <h3>E-Commerce Interface</h3>
+                    <p>Developed a clean, user-friendly shopping cart using JavaScript and HTML.</p>
+                    <a href="#" style="color: #6e8efb; text-decoration: none; font-weight: bold;">View Code →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-placeholder">PY</div> <div class="project-info">
+                    <h3>Data Scraper Tool</h3>
+                    <p>Built a Python script to automate data collection from web sources.</p>
+                    <a href="#" style="color: #6e8efb; text-decoration: none; font-weight: bold;">View Code →</a>
+                </div>
+            </div>
+
         </div>
-        <div class="project">
-            <h3>Project Two</h3>
-            <p>A brief description of what you did and the tools you used.</p>
-        </div>
+    </section>
     </section>
 
     <section>
