@@ -38,6 +38,28 @@
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
         }
+        .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.skill-tag {
+    background: #e0e0e0;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+        footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    font-size: 0.8rem;
+    color: #777;
+}
     </style>
 </head>
 <body>
@@ -54,6 +76,16 @@
         <a href="mailto:yourname@email.com" class="btn">Hire Me / Contact</a>
         <a href="my-resume.pdf" class="btn" download>Download My Resume (PDF)</a>
     </section>
+    <section>
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git/GitHub</span>
+        <span class="skill-tag">Python</span>
+    </div>
+</section>
 
     <section>
         <section>
@@ -85,6 +117,8 @@
         <p>Email: yourname@email.com</p>
         <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
     </section>
-
+<footer>
+    <p>&copy; 2026 [Your Name]. Built with HTML & CSS on GitHub Pages.</p>
+</footer>
 </body>
 </html>
