@@ -3,6 +3,22 @@
 <head>
     <title>My Portfolio</title>
     <style>
+        body {
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden; /* This kills the horizontal scrollbar */
+    width: 100%;
+    box-sizing: border-box; /* Makes sure padding doesn't add to the width */
+}
+
+/* Add this to ensure all images and containers behave */
+* {
+    box-sizing: border-box;
+}
+
+img, div, section {
+    max-width: 100%; /* Ensures nothing pushes past the right edge */
+}
         body { 
     font-family: 'Inter', system-ui, -apple-system, sans-serif; 
     line-height: 1.6; 
@@ -80,6 +96,14 @@ h2 {
     font-size: 0.85rem;
     font-weight: 600;
     border: 1px solid #ffdecb;
+}
+        .profile-img {
+    width: 150px;       /* This sets the size you want */
+    height: 150px;      /* Keep width and height equal for a circle */
+    object-fit: cover;  /* Ensures the photo isn't squished */
+    border-radius: 50%; 
+    border: 4px solid white;
+    max-width: 100%;    /* Prevents it from being wider than the screen */
 }
     </style>
 </head>
