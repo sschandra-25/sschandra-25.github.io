@@ -105,6 +105,26 @@ h2 {
     border: 4px solid white;
     max-width: 100%;    /* Prevents it from being wider than the screen */
 }
+        .skills-section {
+    display: flex;
+    flex-direction: column; /* This stacks the rows vertically */
+    gap: 15px;             /* This adds space between the two lines */
+}
+
+.skills-row {
+    display: block;         /* Ensures the row takes up the full width */
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #fff5f0;    /* Light orange background */
+    color: #ff4500;         /* Orange text */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #ffdecb;
+    font-weight: 500;
+    width: 100%;            /* Makes the tag stretch across the line */
+}
     </style>
 </head>
 <body>
@@ -127,10 +147,15 @@ Highly dedicated, execution-focused, and committed to delivering high-quality re
     </section>
     <section>
     <h2>Skills</h2>
-    <div class="skills-container">
-        <span class="skill-tag">Programming and Data manipulation tools (Python, SQL and NumPy, Pandas, PySpark, Polars, Matplotlib)</span>
+    <div class="skills-section">
+    <div class="skills-row">
+        <span class="skill-tag">Programming and Data manipulation tools (Python, SQL, NumPy, Pandas, PySpark, Polars, Matplotlib)</span>
+    </div>
+    
+    <div class="skills-row">
         <span class="skill-tag">Soft skills (Motivation, Collaboration, Eagerness to Learn, Proactivity, Impact-Driven)</span>
     </div>
+</div>
 </section>
 
     <section>
